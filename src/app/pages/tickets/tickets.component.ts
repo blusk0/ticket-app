@@ -1,7 +1,5 @@
 import { TicketsService } from '../../core/tickets.service';
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subject, Observable } from 'rxjs';
-import { Ticket } from './ticket.model';
+import { Component,  OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tickets',
@@ -9,13 +7,10 @@ import { Ticket } from './ticket.model';
   styleUrls: ['./tickets.component.scss'],
 })
 export class TicketsComponent implements OnInit {
-  tickets$: Observable<Ticket[]>;
 
   constructor(private _ticketsService: TicketsService) {
-    this.tickets$ = this._ticketsService.tickets$;
   }
 
-  async ngOnInit(): Promise<any> {
-    await this._ticketsService.getTickets().toPromise();
+  ngOnInit(): void {
   }
 }
