@@ -6,18 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TicketsComponent } from './tickets/tickets.component';
-import { UsersComponent } from './users/users.component';
-import { AssetsComponent } from './assets/assets.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TicketsComponent,
-    UsersComponent,
-    AssetsComponent,
-  ],
+  declarations: [AppComponent, TicketsComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

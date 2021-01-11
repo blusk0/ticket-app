@@ -8,7 +8,6 @@ import { faBoxes, faHome, faTicketAlt, faUsers } from '@fortawesome/free-solid-s
 })
 export class AppComponent {
   title = 'ticket-app';
+  faHome = faHome;
   faTicketAlt = faTicketAlt;
-  faUsers = faUsers;
-  faBoxes = faBoxes;
 }

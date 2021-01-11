@@ -4,4 +4,5 @@ export type Ticket = {
   priority: number;
   category: string;
   user: string;
+  description: string;
 };

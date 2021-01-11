@@ -1,4 +1,4 @@
-import { TicketsService } from './tickets.service';
+import { TicketsService } from '../core/tickets.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
@@ -27,7 +27,6 @@ export class TicketsComponent implements OnInit, OnDestroy {
   addTicket(): void {
     this._ticketsService
       .addTicket({
-        id: 5,
         priority: 2,
         assignedAt: new Date().toDateString(),
         category: 'Software Issue',

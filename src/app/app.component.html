@@ -2,13 +2,15 @@
   <h1 class="level-left">Ticket App</h1>
   <nav class="level-right">
     <p class="level-item">
-      <span class="icon"><fa-icon [icon]="faTicketAlt"></fa-icon></span> Tickets
+      <a routerLink="">
+        <span class="icon"><fa-icon [icon]="faHome"></fa-icon></span> Home
+      </a>
     </p>
     <p class="level-item">
-      <span class="icon"><fa-icon [icon]="faBoxes"></fa-icon></span> Assets
-    </p>
-    <p class="level-item">
-      <span class="icon"><fa-icon [icon]="faUsers"></fa-icon></span> Users
+      <a routerLink="tickets">
+        <span class="icon"><fa-icon [icon]="faTicketAlt"></fa-icon></span>
+        Tickets
+      </a>
     </p>
   </nav>
 </header>
