@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faBoxes, faHome, faTicketAlt, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faTicketAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',

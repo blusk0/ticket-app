@@ -1,4 +1,4 @@
-import { Ticket } from './../tickets/ticket.model';
+import { Ticket } from '../pages/tickets/ticket.model';
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 

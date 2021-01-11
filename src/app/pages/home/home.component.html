@@ -1,0 +1,60 @@
+<div class="container">
+  <h1>Welcome to our Ticket System!</h1>
+
+  <section>
+    <div class="elevated-sub-container">
+      <h2 class="teal">Submit a Ticket</h2>
+      <hr>
+      <form [formGroup]="newTicketForm" (ngSubmit)="formSubmit()">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal label">User</div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input formControlName="user" class="input" type="text" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal label">Category</div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input formControlName="category" class="input" type="text" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal label">Priority</div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input formControlName="priority" class="input" type="text" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal label">Description</div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input formControlName="description" class="input" type="text" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons is-justify-content-flex-end">
+          <button type="submit" class="button is-primary">Submit</button>
+          <button type="button" class="button">Reset</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

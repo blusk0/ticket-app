@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Priority</th>
+        <th>Assigned At</th>
+        <th>Category</th>
+        <th>User</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ticket of tickets$ | async">
+        <td>{{ ticket.priority }}</td>
+        <td>{{ ticket.assignedAt | date }}</td>
+        <td>{{ ticket.category }}</td>
+        <td>{{ ticket.user }}</td>
+        <td>{{ ticket.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -27,6 +27,11 @@ header {
   th,
   td {
     color: #ddd !important;
+    border: 0 !important;
+  }
+
+  tr {
+    border: 1px solid #0d1117 !important;
   }
 }
 
@@ -44,4 +49,20 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
+}
+
+.teal {
+  color: #00b686;
+}
+
+.elevated-sub-container {
+  background-color: #161b22;
+  border-radius: 5px;
+  border: 1px solid #222;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.label {
+  color: #ddd;
 }
