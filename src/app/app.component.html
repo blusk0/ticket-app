@@ -1,8 +1,17 @@
 <header class="level is-mobile">
   <h1 class="level-left">Ticket App</h1>
   <nav class="level-right">
-    <p class="level-item"><fa-icon [icon]="faTicketAlt"></fa-icon> Tickets</p>
-    <p class="level-item"><fa-icon [icon]="faBoxes"></fa-icon> Assets</p>
-    <p class="level-item"><fa-icon [icon]="faUsers"></fa-icon> Users</p>
+    <p class="level-item">
+      <span class="icon"><fa-icon [icon]="faTicketAlt"></fa-icon></span> Tickets
+    </p>
+    <p class="level-item">
+      <span class="icon"><fa-icon [icon]="faBoxes"></fa-icon></span> Assets
+    </p>
+    <p class="level-item">
+      <span class="icon"><fa-icon [icon]="faUsers"></fa-icon></span> Users
+    </p>
   </nav>
 </header>
+<section>
+  <router-outlet></router-outlet>
+</section>

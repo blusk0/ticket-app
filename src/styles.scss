@@ -19,3 +19,13 @@ header {
     font-size: 2rem;
   }
 }
+
+.table {
+  background-color: #2a2a2a;
+  border: 1px solid #111;
+  border-radius: 4px;
+  th,
+  td {
+    color: #ddd !important;
+  }
+}
